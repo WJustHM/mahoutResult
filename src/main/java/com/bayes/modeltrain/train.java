@@ -18,24 +18,7 @@ public class train {
                     "-c",
                     "-ow",
                     "--tempDir", "/s3"};
-            String[] str2 = {"-fs", "hdfs://hadoop:9000",
-                    "-i", "/mahoutbayes/train/train-seq2parse2/tfidf-vectors",
-                    "-o", "/mahoutbayes/train/train2/model",                //	训练文物的输出文件
-                    "-li", "/mahoutbayes/train/train2/labelindex",                //	测试任务的输出文件
-                    "-c",
-                    "-ow",
-                    "--tempDir", "/s3"};
-            String[] str3 = {"-fs", "hdfs://hadoop:9000",
-                    "-i", "/mahoutbayes/train/train-seq2parse3/tfidf-vectors",
-                    "-o", "/mahoutbayes/train/train3/model",                //	训练文物的输出文件
-                    "-li", "/mahoutbayes/train/train3/labelindex",                //	测试任务的输出文件
-                    "-c",
-                    "-ow",
-                    "--tempDir", "/s3"};
-
             TrainNaiveBayesJob.main(str1);
-            TrainNaiveBayesJob.main(str2);
-            TrainNaiveBayesJob.main(str3);
         } catch (Exception e) {
             e.printStackTrace();
         }

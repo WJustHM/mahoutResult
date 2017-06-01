@@ -19,10 +19,12 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.net.URI;
+import java.util.regex.Pattern;
 
 /**
  * Created by linux on 17-2-17.
  */
+@SuppressWarnings("deprecation")
 public class ReadClusterWritable extends AbstractJob {
     private static SequenceFile.Reader reader = null;
     private static Job job;
@@ -61,19 +63,14 @@ public class ReadClusterWritable extends AbstractJob {
 
         }
     }
-
     public static void read(String pathStr) throws IOException {
         FileSystem fs = FileSystem.get(URI.create(pathStr), conf);
         SequenceFile.Reader reader = new SequenceFile.Reader(fs, new Path(pathStr), conf);
         Text key = new Text();
         Text value = new Text();
-        int i = 0;
         while (reader.next(key, value)) {
-            i++;
-            System.out.println("----------------key-----------------" + key);
-            System.out.println("----------------value-----------------" + value);
-            if (i == 100) break;
+            System.out.print("Classification key:" + key+"\t\t\t");
+            System.out.println("Actually cvalue:" + value);
         }
-
     }
 }

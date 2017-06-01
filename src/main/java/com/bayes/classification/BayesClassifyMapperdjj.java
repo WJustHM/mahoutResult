@@ -1,6 +1,5 @@
 package com.bayes.classification;
 
-import fz.bayes.BayesUtil;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.Text;
@@ -43,10 +42,8 @@ public class BayesClassifyMapperdjj extends Mapper<Text, VectorWritable, Text, T
     @Override
     public void map(Text key, VectorWritable value, Context context) throws IOException, InterruptedException {
         Vector result = classifier.classifyFull(value.get());
-
         String label = BayesUtil.classifyVector(result, labelMap);
         log.info("------------"+label);
-
         //the key is the vector
         context.write(new Text(key.toString()), new Text(label));
     }

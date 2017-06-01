@@ -1,16 +1,16 @@
-package fz.bayes;
-
-import java.util.Map;
+package com.bayes.classification;
 
 import org.apache.mahout.classifier.ClassifierResult;
 import org.apache.mahout.math.RandomAccessSparseVector;
 import org.apache.mahout.math.Vector;
 
+import java.util.Map;
+
 public class BayesUtil {
 
 	/**
-	 * °ÑÊäÈë×Ö·û´®×ª»»ÎªVector
-	 * @param lines
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½×ªï¿½ï¿½ÎªVector
+//	 * @param lines
 	 * @return
 	 */
 	public static Vector transformToVector(String[] line){
@@ -20,14 +20,14 @@ public class BayesUtil {
 			try{
 				item=Double.parseDouble(line[i]);
 			}catch(Exception e){
-				return null; // Èç¹û²»¿ÉÒÔ×ª»»£¬ËµÃ÷ÊäÈëÊý¾ÝÓÐÎÊÌâ
+				return null; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			}
 			v.setQuick(i, item);
 		}
 		return v;
 	}
 	/**
-	 * ¸ù¾ÝµÃ·ÖÖµ·ÖÀà
+	 * ï¿½ï¿½ï¿½ÝµÃ·ï¿½Öµï¿½ï¿½ï¿½ï¿½
 	 * @param v
 	 * @param labelMap
 	 * @return

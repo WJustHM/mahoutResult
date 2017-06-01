@@ -1,6 +1,5 @@
 package com.bayes.classification;
 
-import bayes.BayesClassifiedJobdjj;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.util.ToolRunner;
 
@@ -17,8 +16,6 @@ public class TestBayesClassifiedJobdjj {
                 "-m", "hdfs://hadoop:9000/mahoutbayes/train/train" + args[1] + "/model",                //	训练文物的输出文件
                 "-labelIndex", "hdfs://hadoop:9000/mahoutbayes/train/train" + args[1] + "/labelindex"             //	测试任务的输出文件
         };
-
         ToolRunner.run(conf, new BayesClassifiedJobdjj(), strtrain);
     }
-
 }

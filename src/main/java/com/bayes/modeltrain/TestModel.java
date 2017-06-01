@@ -19,7 +19,7 @@ public class TestModel {
                     "--tempDir","/s5"};
 
             String[] strtrain={"-fs", "hdfs://hadoop:9000",
-                    "-i","/mahoutbayes/test/test-seq2parse1/tfidf-vectors",
+                    "-i","/mahoutbayes/train/train-seq2parse1/tfidf-vectors",
                     "-m", "/mahoutbayes/train/train1/model",				//	训练文物的输出文件
                     "-l", "/mahoutbayes/train/train1/labelindex",				//	测试任务的输出文件
                     //	从输入文件中获得标识

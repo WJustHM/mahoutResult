@@ -6,6 +6,19 @@
         <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
       </element>
       <element id="module-output" name="mahout" />
+      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-examples-0.11.0-job.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-examples-0.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-h2o_2.10-0.11.0-dependency-reduced.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-h2o_2.10-0.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-hdfs-0.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-integration-0.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-math-0.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-math-scala_2.10-0.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-mr-0.11.0-job.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-mr-0.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-spark-shell_2.10-0.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-spark_2.10-0.11.0-dependency-reduced.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-spark_2.10-0.11.0.jar" path-in-jar="/" />
       <element id="extracted-dir" path="/opt/mahout/mahout11/lib/activation-1.1.jar" path-in-jar="/" />
       <element id="extracted-dir" path="/opt/mahout/mahout11/lib/avro-1.7.4.jar" path-in-jar="/" />
       <element id="extracted-dir" path="/opt/mahout/mahout11/lib/cglib-nodep-2.2.2.jar" path-in-jar="/" />
@@ -79,6 +92,11 @@
       <element id="extracted-dir" path="/opt/mahout/mahout11/lib/xpp3_min-1.1.4c.jar" path-in-jar="/" />
       <element id="extracted-dir" path="/opt/mahout/mahout11/lib/xstream-1.4.4.jar" path-in-jar="/" />
       <element id="extracted-dir" path="/opt/mahout/mahout11/lib/zookeeper-3.4.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../xlsx/dom4j-1.6.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../xlsx/poi-3.8-20120326.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../xlsx/poi-ooxml-3.8-20120326.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../xlsx/poi-ooxml-schemas-3.8-20120326.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../xlsx/xmlbeans-2.3.0.jar" path-in-jar="/" />
       <element id="extracted-dir" path="/opt/mahout/mahout11/lib/hadoop/hadoop-annotations-2.4.1.jar" path-in-jar="/" />
       <element id="extracted-dir" path="/opt/mahout/mahout11/lib/hadoop/hadoop-auth-2.4.1.jar" path-in-jar="/" />
       <element id="extracted-dir" path="/opt/mahout/mahout11/lib/hadoop/hadoop-common-2.4.1.jar" path-in-jar="/" />
@@ -92,28 +110,10 @@
       <element id="extracted-dir" path="/opt/mahout/mahout11/lib/hadoop/hadoop-yarn-client-2.4.1.jar" path-in-jar="/" />
       <element id="extracted-dir" path="/opt/mahout/mahout11/lib/hadoop/hadoop-yarn-common-2.4.1.jar" path-in-jar="/" />
       <element id="extracted-dir" path="/opt/mahout/mahout11/lib/hadoop/hadoop-yarn-server-common-2.4.1.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-examples-0.11.0-job.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-examples-0.11.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-h2o_2.10-0.11.0-dependency-reduced.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-h2o_2.10-0.11.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-hdfs-0.11.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-integration-0.11.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-math-0.11.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-math-scala_2.10-0.11.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-mr-0.11.0-job.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-mr-0.11.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-spark-shell_2.10-0.11.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-spark_2.10-0.11.0-dependency-reduced.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="/opt/mahout/mahout11/mahout-spark_2.10-0.11.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../../xlsx/dom4j-1.6.1.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../../xlsx/poi-3.8-20120326.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../../xlsx/poi-ooxml-3.8-20120326.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../../xlsx/poi-ooxml-schemas-3.8-20120326.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../../xlsx/xmlbeans-2.3.0.jar" path-in-jar="/" />
       <element id="library" level="project" name="mahout11" />
       <element id="library" level="project" name="mahoutllib" />
       <element id="library" level="project" name="hadoopmahout" />
-      <element id="library" level="project" name="xlsx" />
+      <element id="library" level="project" name="dom4j-1.6.1" />
     </root>
   </artifact>
 </component>

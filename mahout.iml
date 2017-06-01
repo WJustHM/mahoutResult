@@ -16,7 +16,7 @@
     <orderEntry type="library" name="mahoutllib" level="project" />
     <orderEntry type="library" name="hadoopmahout" level="project" />
     <orderEntry type="library" name="xls" level="project" />
+    <orderEntry type="library" name="dom4j-1.6.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.1" level="project" />
-    <orderEntry type="library" name="xlsx" level="project" />
   </component>
 </module>

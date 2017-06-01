@@ -1,6 +1,5 @@
 package com.bayes.classification;
 
-import bayes.BayesClassifyMapperdjj;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.Text;
@@ -27,7 +26,6 @@ public class BayesClassifiedJobdjj extends AbstractJob {
         addOutputOption();
         addOption("model", "m", "The file where bayesian model store ");
         addOption("labelIndex", "labelIndex", "The file where the index store ");
-
         if (parseArguments(args) == null) {
             return -1;
         }
@@ -35,19 +33,17 @@ public class BayesClassifiedJobdjj extends AbstractJob {
         Path output = getOutputPath();
         String modelPath = getOption("model");
         String labelIndex = getOption("labelIndex");
-        System.out.println("-----------++++labelIndex:"+labelIndex);
+        System.out.println("-----------++++labelIndex:" + labelIndex);
         Configuration conf = getConf();
         conf.set("labelIndex", labelIndex);
         HadoopUtil.cacheFiles(new Path(modelPath), conf);
         HadoopUtil.delete(conf, output);
         Job job = Job.getInstance(conf);
         job.setJobName("Use bayesian model to classify the  input:" + input.getName());
-        job.setJar("/home/linux/桌面/project/mahout/out/artifacts/mahout_jar/mahout.jar");
+        job.setJar(System.getProperty("user.dir") + "/out/artifacts/mahout_jar/mahout.jar");
         job.setJarByClass(BayesClassifiedJobdjj.class);
-
         job.setInputFormatClass(SequenceFileInputFormat.class);
         job.setOutputFormatClass(SequenceFileOutputFormat.class);
-
         job.setMapperClass(BayesClassifyMapperdjj.class);
         job.setMapOutputKeyClass(Text.class);
         job.setMapOutputValueClass(VectorWritable.class);
